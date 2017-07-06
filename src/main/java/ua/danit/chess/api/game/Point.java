@@ -81,6 +81,8 @@ public class Point {
   @Override
   public String toString() {
     return MoreObjects.toStringHelper(this)
+                      .add("xaCoordinate", xaCoordinate)
+                      .add("yaCoordinate", yaCoordinate)
                       .toString();
   }
 }

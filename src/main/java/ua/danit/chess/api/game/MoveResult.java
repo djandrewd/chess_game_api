@@ -89,6 +89,12 @@ public class MoveResult {
 
   @Override
   public String toString() {
-    return MoreObjects.toStringHelper(this).toString();
+    return MoreObjects.toStringHelper(this)
+                      .add("moveId", moveId)
+                      .add("error", error)
+                      .add("nextMove", nextMove)
+                      .add("winner", winner)
+                      .add("beatedFigures", beatedFigures)
+                      .toString();
   }
 }
